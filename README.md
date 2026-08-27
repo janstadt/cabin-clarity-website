@@ -2,9 +2,9 @@
 
 Static, zero-dependency marketing site for CabinClarity, deployed to GitHub Pages.
 
-**Live URL:** `https://cabinclarity.app/` (custom domain; GitHub Pages URL is `https://<owner>.github.io/cabin-clarity/`)
+**Live URL:** `https://cabinclarity.app/` (custom domain; GitHub Pages URL is `https://janstadt.github.io/cabin-clarity-website/`). The site lives in this standalone **public** repo; the app source is kept private in a separate repo.
 
-The `website/CNAME` file (`cabinclarity.app`) tells GitHub Pages to serve the
+The `CNAME` file (add `cabinclarity.app` as its contents once DNS is pointed) tells GitHub Pages to serve the
 custom domain. To activate it: in repo **Settings → Pages → Custom domain**, set
 `cabinclarity.app` and add the matching DNS records (apex `A` records for
 github-pages IPs, or a `CNAME` record if using `www.cabinclarity.app`). SSL is

@@ -1,5 +1,5 @@
-# Deploys the marketing site (website/) to GitHub Pages.
-# Site will be available at: https://<owner>.github.io/cabin-clarity/
+# Deploys the CabinClarity marketing site (static files at repo root) to GitHub Pages.
+# Site will be available at: https://<owner>.github.io/cabin-clarity-website/
 #
 # NOTE: repo Settings → Pages → Build and deployment → Source
 # must be set to "GitHub Actions" (one-time setup).
@@ -10,9 +10,6 @@ name: website
 "on":
   push:
     branches: [main]
-    paths:
-      - "website/**"
-      - ".github/workflows/website.yml"
   workflow_dispatch:
 
 permissions:
@@ -36,11 +33,11 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
-      # Site is plain static files — no build step needed.
+      # Site is plain static files at the repo root — no build step needed.
       - name: Upload site
         uses: actions/upload-pages-artifact@v3
         with:
-          path: website
+          path: .
 
       - name: Deploy to GitHub Pages
         id: deployment
