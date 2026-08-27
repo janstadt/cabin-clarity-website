@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <title>Data sources &amp; licenses — CabinClarity</title>
+    <meta
+      name="description"
+      content="Where CabinClarity gets its lake data, the licenses that govern it, and how we attribute and acknowledge each source."
+    />
+    <meta property="og:title" content="Data sources &amp; licenses — CabinClarity" />
+    <meta
+      property="og:description"
+      content="Where CabinClarity gets its lake data and the licenses that govern it."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://cabinclarity.app/data-sources.html" />
+    <meta
+      property="og:image"
+      content="https://cabinclarity.app/assets/icon.png"
+    />
+    <meta property="og:site_name" content="CabinClarity" />
+    <link rel="canonical" href="https://cabinclarity.app/data-sources.html" />
+    <link rel="icon" href="assets/favicon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="assets/icon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .doc {
+        max-width: 820px;
+        margin: 0 auto;
+        padding: 56px 20px 40px;
+      }
+      .doc h1 {
+        font-size: clamp(28px, 5vw, 40px);
+        line-height: 1.1;
+        margin: 0 0 8px;
+        letter-spacing: -0.02em;
+      }
+      .doc .lede {
+        color: var(--cyan, #3ec6f0);
+        font-size: 15px;
+        margin: 0 0 36px;
+      }
+      .source {
+        border: 1px solid rgba(62, 198, 240, 0.18);
+        border-radius: 16px;
+        padding: 22px 24px;
+        margin: 0 0 18px;
+        background: rgba(255, 255, 255, 0.02);
+      }
+      .source h2 {
+        margin: 0 0 4px;
+        font-size: 19px;
+        letter-spacing: -0.01em;
+      }
+      .source .lic {
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--cyan, #3ec6f0);
+        margin: 0 0 10px;
+      }
+      .source p {
+        margin: 0 0 8px;
+        font-size: 14.5px;
+        line-height: 1.55;
+        color: rgba(255, 255, 255, 0.82);
+      }
+      .source p:last-child {
+        margin-bottom: 0;
+      }
+      .doc h3 {
+        margin: 40px 0 10px;
+        font-size: 16px;
+        letter-spacing: 0.02em;
+      }
+      .doc ul {
+        margin: 0 0 18px;
+        padding-left: 20px;
+      }
+      .doc li {
+        font-size: 14.5px;
+        line-height: 1.55;
+        color: rgba(255, 255, 255, 0.82);
+        margin-bottom: 6px;
+      }
+      .doc a {
+        color: var(--cyan, #3ec6f0);
+      }
+      .back {
+        display: inline-block;
+        margin-top: 36px;
+        color: var(--cyan, #3ec6f0);
+        font-size: 14px;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+
+    <header class="nav reveal">
+      <div class="nav-inner container">
+        <a class="brand" href="index.html" aria-label="CabinClarity home">
+          <img
+            src="assets/icon.png"
+            alt=""
+            width="34"
+            height="34"
+            class="brand-icon"
+          />
+          <span>Cabin<b>Clarity</b></span>
+        </a>
+        <nav aria-label="Primary">
+          <a href="index.html#problem">Why it matters</a>
+          <a href="index.html#features">Features</a>
+          <a href="index.html#screens">See it</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <article class="doc">
+        <h1>Data sources &amp; licenses</h1>
+        <p class="lede">
+          CabinClarity turns public lake data into a plain-language profile. We
+          don't sell the underlying data — we analyze it. Here's exactly where
+          it comes from and the licenses that govern it.
+        </p>
+
+        <section class="source">
+          <h2>Minnesota DNR</h2>
+          <p class="lic">MN DNR General Data &amp; Software License · Lake Map License</p>
+          <p>
+            LakeFinder (lake identification, fish stocking &amp; regulations,
+            invasive-species status), Lake Mapping bathymetry/depth, nearby
+            public lands, and water-clarity programs.
+          </p>
+          <p>
+            The DNR permits <strong>derivative works</strong> (analysis like our
+            Shoreline Score) but prohibits reselling the raw data itself. Lake
+            map data is provided by the Minnesota DNR and used in accordance with
+            the MN DNR Lake Map License. <strong>We acknowledge the Minnesota
+            DNR</strong> as a data contributor.
+          </p>
+        </section>
+
+        <section class="source">
+          <h2>Wisconsin DNR</h2>
+          <p class="lic">Wisconsin DNR website terms</p>
+          <p>
+            Wisconsin lake profiles, fish &amp; regulations, clarity programs,
+            and aquatic invasive-species status.
+          </p>
+          <p>
+            Provided under the Wisconsin DNR website terms: data is offered "as
+            is," governed by Wisconsin law, and may not be used to imply
+            departmental endorsement.
+          </p>
+        </section>
+
+        <section class="source">
+          <h2>UMN LakeBrowser</h2>
+          <p class="lic">University of Minnesota data service</p>
+          <p>
+            Modeled Secchi-disk (water-clarity) time series that power our
+            clarity-history charts.
+          </p>
+          <p>Used with acknowledgment of the University of Minnesota.</p>
+        </section>
+
+        <section class="source">
+          <h2>EPA Water Quality Portal</h2>
+          <p class="lic">U.S. Government work · public domain (CC0)</p>
+          <p>
+            Supplemental water-quality context. Federal government works are in
+            the public domain and free for commercial use; attribution encouraged.
+          </p>
+        </section>
+
+        <section class="source">
+          <h2>OpenStreetMap</h2>
+          <p class="lic">Open Database License (ODbL)</p>
+          <p>
+            Nearby points of interest — boat launches, marinas, restaurants,
+            access points — and lake geometry, served through our self-hosted
+            GeoDesk gateway built from the OSM US-Midwest extract.
+          </p>
+          <p>
+            © <strong>OpenStreetMap contributors</strong>. ODbL is an
+            attribution + share-alike license: you may charge for your product,
+            but any OSM-derived database that is publicly used must be made
+            available. The OSM-derived dataset used by CabinClarity is available
+            under ODbL on request — email
+            <a href="mailto:hello@cabinclarity.app">hello@cabinclarity.app</a>.
+          </p>
+        </section>
+
+        <section class="source">
+          <h2>Geocoders (Esri &amp; US Census)</h2>
+          <p class="lic">Provider terms of use</p>
+          <p>
+            Turning a listing address or URL into map coordinates. Subject to
+            each provider's terms of use.
+          </p>
+        </section>
+
+        <h3>Our obligations &amp; stance</h3>
+        <ul>
+          <li>
+            <strong>We sell analysis, not data.</strong> Our Shoreline Score,
+            charts, and summaries are derivative works built on top of public
+            sources — not repackaged raw datasets.
+          </li>
+          <li>
+            <strong>Attribution is built in.</strong> Every report credits MN/WI
+            DNR, UMN LakeBrowser, EPA, and OpenStreetMap contributors.
+          </li>
+          <li>
+            <strong>No government endorsement.</strong> CabinClarity is an
+            independent product and is not endorsed by, or affiliated with, any
+            agency named above.
+          </li>
+          <li>
+            <strong>OSM share-alike.</strong> Our OSM-derived data is available
+            under ODbL on request.
+          </li>
+        </ul>
+
+        <p>
+          Questions about data licensing? Reach us at
+          <a href="mailto:hello@cabinclarity.app">hello@cabinclarity.app</a>.
+        </p>
+
+        <a class="back" href="index.html">← Back to CabinClarity</a>
+      </article>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <img src="assets/icon.png" alt="" width="24" height="24" /> Cabin<b
+            >Clarity</b
+          >
+        </div>
+        <nav aria-label="Footer">
+          <a href="index.html#problem">Problem</a>
+          <a href="index.html#features">Features</a>
+          <a href="index.html#screens">Screenshots</a>
+          <a href="data-sources.html">Data sources</a>
+          <a href="mailto:hello@cabinclarity.app">Contact</a>
+        </nav>
+        <small>
+          © 2026 CabinClarity · Data courtesy of MN &amp; WI DNR, UMN
+          LakeBrowser, EPA &amp; OpenStreetMap contributors.
+        </small>
+      </div>
+    </footer>
+  </body>
+</html>
