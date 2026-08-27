@@ -1,0 +1,47 @@
+# Deploys the marketing site (website/) to GitHub Pages.
+# Site will be available at: https://<owner>.github.io/cabin-clarity/
+#
+# NOTE: repo Settings → Pages → Build and deployment → Source
+# must be set to "GitHub Actions" (one-time setup).
+
+---
+name: website
+
+"on":
+  push:
+    branches: [main]
+    paths:
+      - "website/**"
+      - ".github/workflows/website.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      # Site is plain static files — no build step needed.
+      - name: Upload site
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: website
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

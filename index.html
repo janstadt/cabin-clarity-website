@@ -1,0 +1,827 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <title>CabinClarity — Know the Lake Before You Buy</title>
+    <meta
+      name="description"
+      content="Enter an address or Zillow/Redfin listing URL and instantly see which Minnesota or Wisconsin lake it's on — with clarity history, invasive species alerts, fish species, depth data, and official DNR reports. Built for lake-cabin shoppers and the realtors who serve them. More states coming soon."
+    />
+    <meta
+      property="og:title"
+      content="CabinClarity — Know the Lake Before You Buy"
+    />
+    <meta
+      property="og:description"
+      content="Clarity history, invasive species, fish lists & DNR deep links for any Minnesota or Wisconsin lake-cabin address. In seconds."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://cabinclarity.app/" />
+    <meta
+      property="og:image"
+      content="https://cabinclarity.app/assets/icon.png"
+    />
+    <meta property="og:site_name" content="CabinClarity" />
+    <link rel="canonical" href="https://cabinclarity.app/" />
+    <link rel="icon" href="assets/favicon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="assets/icon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "CabinClarity",
+        "operatingSystem": "iOS, Android",
+        "url": "https://cabinclarity.app",
+        "applicationCategory": "TravelApplication",
+        "description": "Know the lake before you buy. Enter a listing address or URL and instantly get water-clarity history, invasive-species alerts, fish species, and official DNR data for that lake. Covers Minnesota and Wisconsin lakes.",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+
+    <!-- ===== NAV ===== -->
+    <header class="nav reveal">
+      <div class="nav-inner container">
+        <a class="brand" href="#top" aria-label="CabinClarity home">
+          <img
+            src="assets/icon.png"
+            alt=""
+            width="34"
+            height="34"
+            class="brand-icon"
+          />
+          <span>Cabin<b>Clarity</b></span>
+        </a>
+        <nav aria-label="Primary">
+          <a href="#problem">Why it matters</a>
+          <a href="#features">Features</a>
+          <a href="#screens">See it</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <!-- ===== HERO ===== -->
+      <section class="hero">
+        <div class="hero-bg" aria-hidden="true">
+          <div class="orb orb-a"></div>
+          <div class="orb orb-b"></div>
+          <div class="orb orb-c"></div>
+          <svg class="waves" viewBox="0 0 1440 320" preserveAspectRatio="none">
+            <path
+              fill="#04639A"
+              fill-opacity="0.22"
+              d="M0,160L60,170.7C120,181,240,203,360,197.3C480,192,600,160,720,154.7C840,149,960,171,1080,176C1200,181,1320,165,1380,157.3L1440,149L1440,320L0,320Z"
+            ></path>
+            <path
+              fill="#04639A"
+              fill-opacity="0.16"
+              d="M0,224L48,213.3C96,203,192,181,288,186.7C384,192,480,224,576,234.7C672,245,768,235,864,213.3C960,192,1056,160,1152,160C1248,160,1344,192,1392,208L1440,224L1440,320L0,320Z"
+            ></path>
+            <path
+              fill="#04639A"
+              fill-opacity="0.10"
+              d="M0,256L48,250C96,244,192,232,288,232C384,232,480,244,576,250.7C672,257,768,267,864,261.3C960,256,1056,234,1152,218.7C1248,203,1344,197,1392,194.7L1440,192L1440,320L0,320Z"
+            ></path>
+          </svg>
+        </div>
+
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow reveal">
+              <span class="pulse-dot"></span> For lake-cabin shoppers &amp;
+              their realtors
+            </p>
+            <h1 class="reveal">
+              <span class="gradient-text">Know the lake.</span><br />Before you
+              buy the cabin.
+            </h1>
+            <p class="lede reveal">
+              Paste an address — or a Zillow / Redfin listing URL — and
+              CabinClarity tells you exactly which lake you're looking at —
+              along with nine years of water-clarity history, invasive-species
+              warnings, fish species, depths, and direct links to every official
+              DNR report. In seconds, not hours.
+            </p>
+            <div class="cta-row reveal">
+              <a class="btn btn-primary" href="#screens">
+                See how it works
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M5 12h14"></path>
+                  <path d="m12 5 7 7-7 7"></path>
+                </svg>
+              </a>
+              <a class="btn btn-ghost" href="#features">Explore features</a>
+            </div>
+            <p class="micro reveal">
+              Powered by public data · UMN LakeBrowser · MN DNR LakeFinder
+            </p>
+          </div>
+
+          <!-- CSS-only phone mockup -->
+          <div class="phone-wrap reveal">
+            <div
+              class="phone"
+              role="img"
+              aria-label="CabinClarity app showing lake details for Mille Lacs Lake"
+            >
+              <div class="phone-notch"></div>
+              <div class="phone-screen">
+                <div class="app-header">
+                  <span class="app-title">Lake Details</span>
+                  <span class="chip chip-live"
+                    ><span class="pulse-dot"></span> LIVE DATA</span
+                  >
+                </div>
+                <div class="map-strip" aria-hidden="true">
+                  <div class="lake-shape"></div>
+                  <div class="pin" style="--x: 38%; --y: 44%"></div>
+                  <div class="pin small" style="--x: 70%; --y: 30%"></div>
+                  <div class="pin small" style="--x: 62%; --y: 66%"></div>
+                  <div class="map-label" style="--x: 38%; --y: 58%">
+                    Mille Lacs
+                  </div>
+                </div>
+                <div class="stat-row">
+                  <div class="stat">
+                    <span class="stat-num gradient-text">4.2 m</span>
+                    <span class="stat-label">avg clarity</span>
+                  </div>
+                  <div class="stat">
+                    <span class="stat-num">31,971 ac</span>
+                    <span class="stat-label">area</span>
+                  </div>
+                  <div class="stat">
+                    <span class="stat-num">42 ft</span>
+                    <span class="stat-label">max depth</span>
+                  </div>
+                </div>
+                <div class="alert-card">⚠️ Zebra mussels detected</div>
+                <div class="fish-chips">
+                  <span>Walleye</span><span>Northern Pike</span
+                  ><span>Muskellunge</span><span>+6 more</span>
+                </div>
+                <div class="app-footer-link">
+                  → Full DNR report · WHAF score · Depth map
+                </div>
+              </div>
+            </div>
+            <div class="phone-glow" aria-hidden="true"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== DATA SOURCES STRIP ===== -->
+      <section class="proof reveal">
+        <div class="container proof-inner">
+          <span>Data from</span>
+          <strong>MN DNR LakeFinder</strong>
+          <span>·</span>
+          <strong>UMN LakeBrowser</strong>
+          <span>·</span>
+          <strong>Esri World Geocoder</strong>
+          <span>·</span>
+          <strong>US Census Geocoder</strong>
+        </div>
+      </section>
+
+      <!-- ===== PROBLEM ===== -->
+      <section id="problem" class="section problem">
+        <div class="container narrow">
+          <p class="eyebrow center reveal">The problem</p>
+          <h2 class="center reveal">
+            The cabin is on the lake.<br />But most buyers never really see it.
+          </h2>
+          <p class="center lede reveal">
+            The biggest financial risk in a lake purchase isn't the deck or the
+            septic — it's the water you can't evaluate from your phone.
+          </p>
+
+          <div class="risk-list">
+            <article class="risk-card glass reveal">
+              <span class="risk-icon" aria-hidden="true"
+                ><svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <circle cx="11" cy="11" r="7"></circle>
+                  <path d="m21 21-4.35-4.35"></path></svg
+              ></span>
+              <h3>You find out the lake after the offer</h3>
+              <p>
+                Listings show square feet and shoreline footage. They don't show
+                that the "crystal-clear" lake turns pea-soup green in August —
+                or that Secchi readings have been trending the wrong way for
+                years.
+              </p>
+            </article>
+            <article class="risk-card glass reveal">
+              <span class="risk-icon" aria-hidden="true"
+                ><svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <circle cx="12" cy="13" r="5"></circle>
+                  <path d="M12 8V5"></path>
+                  <path d="m9 4.5 1.6 1.8"></path>
+                  <path d="M15 4.5 13.4 6.3"></path>
+                  <path d="M7 12H4"></path>
+                  <path d="M7 16H4.5"></path>
+                  <path d="M17 12h3"></path>
+                  <path d="M17 16h2.5"></path></svg
+              ></span>
+              <h3>Invasive species change everything</h3>
+              <p>
+                Zebra mussels cut swimmers' feet and wreck boat motors. Eurasian
+                milfoil chokes shorelines. None of this appears in listing
+                photos — but it's all in DNR records, if you know where to look.
+              </p>
+            </article>
+            <article class="risk-card glass reveal">
+              <span class="risk-icon" aria-hidden="true"
+                ><svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <ellipse cx="9.5" cy="12" rx="6.5" ry="4"></ellipse>
+                  <path d="m16 12 5.5-4v8z"></path>
+                  <circle cx="6.5" cy="11" r="0.4"></circle></svg
+              ></span>
+              <h3>“Is the fishing good?” is guesswork</h3>
+              <p>
+                Fish surveys, special regulations, consumption advisories — they
+                exist for nearly every Minnesota and Wisconsin lake. But hunting
+                across five state websites after a 10-hour showing day? Nobody
+                does that.
+              </p>
+            </article>
+            <article class="risk-card glass reveal">
+              <span class="risk-icon" aria-hidden="true"
+                ><svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <circle cx="12" cy="12" r="9"></circle>
+                  <path d="m15.5 8.5-2 5-5 2 2-5z"></path></svg
+              ></span>
+              <h3>You don’t even know which lake it is</h3>
+              <p>
+                A street address doesn't say which lake it's “on.” Is it
+                connected to the big one nearby? Is there a public access?
+                CabinClarity answers both before the first showing.
+              </p>
+            </article>
+            <article class="risk-card glass reveal">
+              <span class="risk-icon" aria-hidden="true"
+                ><svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <circle cx="12" cy="12" r="9"></circle>
+                  <path d="M12 7v5l3 2"></path></svg
+              ></span>
+              <h3>Diligence eats into your evenings</h3>
+              <p>
+                What CabinClarity does in seconds is currently hours of
+                tab-juggling per lake — DNR LakeFinder, LakeBrowser, county GIS,
+                flood maps. The data exists. It's just scattered. We centralize
+                it.
+              </p>
+            </article>
+
+            <article class="risk-card glass reveal">
+              <span class="risk-icon" aria-hidden="true"
+                ><svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M3 16c2.5 0 2.5 2 5 2s2.5-2 5-2 2.5 2 5 2 2.5-2 5-2"
+                  ></path>
+                  <path
+                    d="M3 20c2.5 0 2.5 2 5 2s2.5-2 5-2 2.5 2 5 2 2.5-2 5-2"
+                  ></path>
+                  <path d="M7 12V5l5 3 5-3v7"></path>
+                </svg>
+              </span>
+              <h3>“Lake access” isn’t lakefront</h3>
+              <p>
+                Listings love the phrase “lake access” — but a shared dock two
+                streets away is a very different property (and price) than one
+                with your own shoreline. CabinClarity shows exactly which lake a
+                home sits on, and how it touches the water.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== FEATURES BENTO ===== -->
+      <section id="features" class="section features">
+        <div class="container">
+          <p class="eyebrow center reveal">
+            Everything about the water, one screen
+          </p>
+          <h2 class="center reveal">
+            A complete lake profile<br />from a single address
+          </h2>
+
+          <div class="bento">
+            <article class="bento-item wide glass reveal">
+              <div class="bento-content">
+                <span class="bento-icon" aria-hidden="true"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M5 19a9 9 0 1 1 14 0"></path>
+                    <path d="m12 14 3.5-4.5"></path>
+                    <circle cx="12" cy="14" r="0.6"></circle></svg
+                ></span>
+                <h3>Shoreline Score, tuned to you</h3>
+                <p>
+                  One transparent 0–100 rating that blends water clarity, lake
+                  health, invasive-species status, and shoreline makeup into a
+                  single number — with a full “why this score?” breakdown. Tune
+                  the weights to what you care about. And if being able to boat
+                  to a restaurant matters to you, the map has you covered —
+                  lakeside spots are pinned right on it, so you can see what's
+                  reachable.
+                </p>
+              </div>
+              <div
+                class="gauge"
+                role="img"
+                aria-label="Example Shoreline Score gauge showing 78 out of 100"
+              >
+                <div class="gauge-arc"></div>
+                <div class="gauge-needle"></div>
+                <div class="gauge-readout"><b>78</b><span>/ 100</span></div>
+                <em>Shoreline Score</em>
+              </div>
+            </article>
+
+            <article class="bento-item glass reveal">
+              <span class="bento-icon" aria-hidden="true"
+                ><svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M12 3 2.5 20h19L12 3z"></path>
+                  <path d="M12 9.5V14"></path>
+                  <path d="M12 17.2h.01"></path></svg
+              ></span>
+              <h3>Invasive species alerts</h3>
+              <p>
+                Zebra mussels, Eurasian milfoil, spiny waterflea and more —
+                flagged at the top so nothing gets missed.
+              </p>
+              <ul class="taglist" aria-hidden="true">
+                <li class="danger">Zebra mussels</li>
+                <li class="warn">Milfoil</li>
+                <li>Spiny waterflea</li>
+              </ul>
+            </article>
+
+            <article class="bento-item glass reveal">
+              <span class="bento-icon" aria-hidden="true"
+                ><svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <ellipse cx="9.5" cy="12" rx="6.5" ry="4"></ellipse>
+                  <path d="m16 12 5.5-4v8z"></path>
+                  <circle cx="6.5" cy="11" r="0.4"></circle></svg
+              ></span>
+              <h3>Fish species &amp; regulations</h3>
+              <p>
+                Full species list plus special regs and safe-eating guidance
+                straight from DNR survey data.
+              </p>
+              <ul class="taglist" aria-hidden="true">
+                <li>Walleye</li>
+                <li>Pike</li>
+                <li>Bass</li>
+                <li>Crappie</li>
+                <li>Sunfish</li>
+              </ul>
+            </article>
+
+            <article class="bento-item wide glass reveal">
+              <div class="bento-content">
+                <span class="bento-icon" aria-hidden="true"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M12 3s6 6.6 6 10.5a6 6 0 0 1-12 0C6 9.6 12 3 12 3z"
+                    ></path></svg
+                ></span>
+                <h3>Water clarity history, 2017–2025</h3>
+                <p>
+                  Nine years of Secchi disk readings from UMN LakeBrowser's
+                  modeled data — charted as a trend, so buyers see whether the
+                  lake is getting clearer or murkier before they commit.
+                </p>
+              </div>
+              <div
+                class="chart"
+                role="img"
+                aria-label="Example water clarity trend improving year over year"
+              >
+                <span style="--v: 42%"></span><span style="--v: 38%"></span
+                ><span style="--v: 40%"></span><span style="--v: 33%"></span
+                ><span style="--v: 35%"></span><span style="--v: 30%"></span
+                ><span style="--v: 27%"></span><span style="--v: 25%"></span
+                ><span style="--v: 21%"></span>
+                <em>Cleaner →</em>
+              </div>
+            </article>
+
+            <article class="bento-item wide glass reveal">
+              <div class="bento-content">
+                <span class="bento-icon" aria-hidden="true"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2-6-2z"></path>
+                    <path d="M9 4v14"></path>
+                    <path d="M15 6v14"></path></svg
+                ></span>
+                <h3>Interactive lake map</h3>
+                <p>
+                  Tappable lake polygons. Tap any nearby lake to pull its
+                  profile instantly — perfect for comparing two listings in the
+                  same area side by side.
+                </p>
+              </div>
+              <div class="mini-map" aria-hidden="true">
+                <div class="polygon p1"></div>
+                <div class="polygon p2"></div>
+                <div class="polygon p3"></div>
+              </div>
+            </article>
+
+            <article class="bento-item glass reveal">
+              <span class="bento-icon" aria-hidden="true"
+                ><svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M3 17.5 17.5 3 21 6.5 6.5 21z"></path>
+                  <path d="m8 13 1.5 1.5"></path>
+                  <path d="m11 10 1.5 1.5"></path>
+                  <path d="m14 7 1.5 1.5"></path></svg
+              ></span>
+              <h3>Lake morphology</h3>
+              <p>
+                Acreage, max depth, littoral percentage, shoreline length — the
+                numbers serious buyers actually ask about.
+              </p>
+            </article>
+
+            <article class="bento-item solo glass reveal">
+              <span class="bento-icon" aria-hidden="true"
+                ><svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"
+                  ></path>
+                  <path
+                    d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"
+                  ></path></svg
+              ></span>
+              <h3>Official source links</h3>
+              <p>
+                One tap opens the actual DNR report pages — depth maps, WHAF
+                lake health, fish consumption advice. Every number, traceable.
+              </p>
+            </article>
+
+            <article class="bento-item wide glass reveal">
+              <div class="bento-content">
+                <span class="bento-icon" aria-hidden="true"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M4 4h16v12H8l-4 4V4z"></path>
+                    <path d="M8 9h8"></path>
+                    <path d="M8 12.5h5"></path></svg
+                ></span>
+                <h3>Share-ready lake reports</h3>
+                <p>
+                  Turn any lake profile into a clean, one-page summary you can
+                  text or email in seconds. Realtors can add their own branding,
+                  so every report that leaves your phone looks like it came from
+                  you.
+                </p>
+              </div>
+              <div class="mini-doc" aria-hidden="true">
+                <i class="doc-title"></i>
+                <i></i><i></i><i></i>
+                <i class="doc-score"></i>
+                <i></i><i></i>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== AUDIENCE / TIME SAVED ===== -->
+      <section class="section audience">
+        <div class="container">
+          <p class="eyebrow center reveal">Who it's for</p>
+          <h2 class="center reveal">Built for people who close lake deals</h2>
+
+          <div class="audience-grid">
+            <article class="glass audience-card reveal">
+              <span class="big-emoji" aria-hidden="true"
+                ><svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="m3 11 9-8 9 8"></path>
+                  <path d="M5 9.5V21h14V9.5"></path>
+                  <path d="M10 21v-6h4v6"></path></svg
+              ></span>
+              <h3>For Buyers</h3>
+              <p>
+                Paste the Zillow link the night before a showing. Walk in
+                already knowing the lake's clarity trend, its invasive-species
+                status, what fish are in it, and where the DNR reports live. Ask
+                sharper questions. Offer with confidence.
+              </p>
+            </article>
+            <article class="glass audience-card reveal">
+              <span class="big-emoji" aria-hidden="true"
+                ><svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <circle cx="7.5" cy="15.5" r="4.5"></circle>
+                  <path d="m10.7 12.3 5.3-5.3"></path>
+                  <path d="m13.5 9.5 2.5 2.5"></path>
+                  <path d="m16.5 6.5 3 3"></path>
+                  <path d="M19.5 9.5 22 7l-3-3"></path></svg
+              ></span>
+              <h3>For Realtors</h3>
+              <p>
+                Run the address between appointments instead of researching all
+                evening. Show up fluent in the lake — not just the lot. Send
+                clients a lake profile along with your follow-up and be the
+                agent who did the homework.
+              </p>
+            </article>
+            <article class="glass audience-card reveal">
+              <span class="big-emoji" aria-hidden="true"
+                ><svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M3 3v18h18"></path>
+                  <path d="M8 17v4"></path>
+                  <path d="M13 12v9"></path>
+                  <path d="M18 7v14"></path></svg
+              ></span>
+              <h3>The time math</h3>
+              <ul>
+                <li>
+                  <b>Hours → seconds:</b> data from 5+ public sites, one result
+                  screen
+                </li>
+                <li>
+                  <b>Fewer surprises:</b> AIS flags surface pre-offer, not
+                  post-closing
+                </li>
+                <li>
+                  <b>Better conversations:</b> speak confidently about the water
+                </li>
+                <li>
+                  <b>Faster closes:</b> a buyer who trusts the lake closes
+                  sooner — and refers friends
+                </li>
+              </ul>
+            </article>
+            <article class="glass audience-card reveal">
+              <span class="big-emoji" aria-hidden="true"
+                ><svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M2 8c2.5 0 2.5 2 5 2s2.5-2 5-2 2.5 2 5 2 2.5-2 5-2"
+                  ></path>
+                  <path
+                    d="M2 14c2.5 0 2.5 2 5 2s2.5-2 5-2 2.5 2 5 2 2.5-2 5-2"
+                  ></path>
+                  <path
+                    d="M2 20c2.5 0 2.5 2 5 2s2.5-2 5-2 2.5 2 5 2 2.5-2 5-2"
+                  ></path></svg
+              ></span>
+              <h3>Why lake knowledge matters</h3>
+              <p>
+                A lake isn't scenery — it's the product. Clarity affects
+                swimming, fishing, algae treatments, dock maintenance, and
+                resale value. Understanding the water isn't extra diligence.
+                <b>It <em>is</em> the diligence.</b>
+              </p>
+            </article>
+            <article class="glass audience-card full reveal">
+              <span class="big-emoji" aria-hidden="true"
+                ><svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <circle cx="12" cy="12" r="9"></circle>
+                  <path d="m8.5 12 2.5 2.5 5-5"></path></svg
+              ></span>
+              <h3>One screen, both sides of the deal</h3>
+              <p>
+                Realtors who bring lake knowledge win trust. Buyers who ask lake
+                questions negotiate better. CabinClarity puts everyone on the
+                same page — literally, the same phone screen.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== SCREENSHOTS ===== -->
+      <section id="screens" class="section screens">
+        <div class="container">
+          <p class="eyebrow center reveal">See it in action</p>
+          <h2 class="center reveal">Screenshots</h2>
+          <div class="shot-grid">
+            <figure class="shot glass reveal">
+              <figcaption>Search by address or listing URL</figcaption>
+              <div class="shot-img placeholder">
+                <span>📱 drop <code>01-search.png</code> here</span>
+              </div>
+            </figure>
+            <figure class="shot glass reveal">
+              <figcaption>Lake details dashboard</figcaption>
+              <div class="shot-img placeholder">
+                <span>📱 drop <code>02-lake-details.png</code> here</span>
+              </div>
+            </figure>
+            <figure class="shot glass reveal">
+              <figcaption>Map view with tappable lakes</figcaption>
+              <div class="shot-img placeholder">
+                <span>📱 drop <code>03-map.png</code> here</span>
+              </div>
+            </figure>
+            <figure class="shot glass reveal">
+              <figcaption>Water-clarity history</figcaption>
+              <div class="shot-img placeholder">
+                <span>📱 drop <code>04-clarity.png</code> here</span>
+              </div>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== FINAL CTA ===== -->
+      <section class="section final-cta">
+        <div class="container narrow center">
+          <h2 class="reveal">
+            Ready to <span class="gradient-text">know your lake?</span>
+          </h2>
+          <p class="lede center reveal">
+            Now in early access for cabin shoppers and realtors — covering
+            <strong>Minnesota and Wisconsin</strong> lakes today, with more
+            states on the way.
+          </p>
+          <div class="cta-row center reveal">
+            <a
+              class="btn btn-primary btn-lg"
+              href="mailto:hello@cabinclarity.app?subject=Early%20access"
+              >Get early access</a
+            >
+            <a class="btn btn-ghost" href="mailto:hello@cabinclarity.app"
+              >Contact us</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <img src="assets/icon.png" alt="" width="24" height="24" /> Cabin<b
+            >Clarity</b
+          >
+        </div>
+        <nav aria-label="Footer">
+          <a href="#problem">Problem</a>
+          <a href="#features">Features</a>
+          <a href="#screens">Screenshots</a>
+          <a href="mailto:hello@cabinclarity.app">Contact</a>
+        </nav>
+        <small
+          >© 2026 CabinClarity · Data courtesy of MN DNR, UMN LakeBrowser &amp;
+          open geocoders.</small
+        >
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
