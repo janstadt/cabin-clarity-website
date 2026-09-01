@@ -1092,11 +1092,6 @@ h3 {
   color: var(--ice);
   border-bottom: 1px solid var(--glass-border);
 }
-.shot-img {
-  /* aspect-ratio: 9 / 17;
-  max-height: 380px;
-  width: 100%; */
-}
 .shot-img.placeholder {
   display: flex;
   align-items: center;
