@@ -1120,9 +1120,12 @@ h3 {
 .shot-img.placeholder code {
   color: var(--cyan);
 }
-.shot-img:not(.placeholder) {
+.shot-img img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   object-position: top;
+  border-radius: 0 0 var(--radius) var(--radius);
 }
 
 /* ---------- final CTA ---------- */
