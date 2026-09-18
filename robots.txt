@@ -1,0 +1,5 @@
+# CabinClarity — crawler policy
+User-agent: *
+Allow: /
+
+Sitemap: https://cabinclarity.app/sitemap.xml

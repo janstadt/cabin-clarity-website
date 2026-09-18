@@ -5,6 +5,38 @@
 
 document.documentElement.classList.remove("no-js");
 
+/* Shared footer — single source of truth for every page. To add a data
+   source or change attribution, edit FOOTER_CREDIT here; each page carries
+   only an empty <footer class="footer" data-footer"></footer> placeholder.
+   The year is computed at runtime so it never goes stale. */
+(function renderFooter() {
+  const FOOTER_CREDIT =
+    "Data courtesy of MI EGLE/DNR, MiCorps, MN & WI DNR, MPCA, MDH, USGS, " +
+    'UMN LakeBrowser, EPA & <a href="data-sources.html">OpenStreetMap contributors</a>.';
+
+  const footer = document.querySelector("footer.footer[data-footer]");
+  if (!footer) return;
+
+  const inSubPage = !document.querySelector("#problem"); // index.html hosts the anchors
+  const T = inSubPage ? "index.html" : "";
+
+  footer.innerHTML =
+    '<div class="container footer-inner">' +
+    '<div class="footer-brand">' +
+    '<img src="assets/icon.png" alt="" width="24" height="24" /> Cabin<b>Clarity</b>' +
+    "</div>" +
+    '<nav aria-label="Footer">' +
+    `<a href="${T}#problem">Problem</a>` +
+    `<a href="${T}#features">Features</a>` +
+    `<a href="${T}#screens">Screenshots</a>` +
+    '<a href="data-sources.html">Data sources</a>' +
+    '<a href="privacy.html">Privacy policy</a>' +
+    '<a href="mailto:hello@cabinclarity.app">Contact</a>' +
+    "</nav>" +
+    `<small>© ${new Date().getFullYear()} CabinClarity · ${FOOTER_CREDIT}</small>` +
+    "</div>";
+})();
+
 (function () {
   let els = document.querySelectorAll(".reveal");
   if (!("IntersectionObserver" in window)) {

@@ -1,0 +1,26 @@
+# CabinClarity
+
+> CabinClarity helps cabin and lake-home buyers evaluate a lake before they
+> buy — water clarity history, water quality, 303(d) impairment status,
+> invasive species, fish and fishing guidance, ice records, access points,
+> and nearby recreation — distilled into a plain-language report with a
+> composite Shoreline Score.
+
+CabinClarity covers Minnesota, Wisconsin, and Michigan lakes. It presents
+public government and volunteer-monitoring data with attribution; it is an
+independent product not endorsed by any agency.
+
+## Pages
+
+- [Home](https://cabinclarity.app/): product overview, features, screenshots,
+  and why lake data matters before a cabin purchase
+- [Data sources & licenses](https://cabinclarity.app/data-sources.html):
+  every data source the reports use (MI EGLE/DNR, MiCorps, MN & WI DNR, MPCA,
+  MDH, USGS NAS, UMN LakeBrowser, EPA Water Quality Portal, OpenStreetMap)
+  with license and attribution terms
+- [Privacy policy](https://cabinclarity.app/privacy.html): what data the app
+  collects and how it's handled
+
+## Contact
+
+- [hello@cabinclarity.app](mailto:hello@cabinclarity.app)
