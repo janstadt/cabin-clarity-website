@@ -2,4 +2,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://cabinclarity.app/sitemap.xml
+Sitemap: https://www.cabinclarity.app/sitemap.xml

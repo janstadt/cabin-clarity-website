@@ -12,13 +12,13 @@ independent product not endorsed by any agency.
 
 ## Pages
 
-- [Home](https://cabinclarity.app/): product overview, features, screenshots,
+- [Home](https://www.cabinclarity.app/): product overview, features, screenshots,
   and why lake data matters before a cabin purchase
-- [Data sources & licenses](https://cabinclarity.app/data-sources.html):
+- [Data sources & licenses](https://www.cabinclarity.app/data-sources.html):
   every data source the reports use (MI EGLE/DNR, MiCorps, MN & WI DNR, MPCA,
   MDH, USGS NAS, UMN LakeBrowser, EPA Water Quality Portal, OpenStreetMap)
   with license and attribution terms
-- [Privacy policy](https://cabinclarity.app/privacy.html): what data the app
+- [Privacy policy](https://www.cabinclarity.app/privacy.html): what data the app
   collects and how it's handled
 
 ## Contact
